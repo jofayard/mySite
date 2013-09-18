@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JimmyFayard.com</title>
+         <link rel="stylesheet" type="text/css" href="/web/css/bootstrap/css/bootstrap.min.css" media="screen" />
+         <link rel="stylesheet" type="text/css" href="/web/css/bootstrap/css/bootstrap-responsive.min.css" media="screen" />
+         <link rel="stylesheet" type="text/css" href="/web/css/bootstrap/css/overrides.css" media="screen" />
+    </head>
+    <body>
+        <div class="container-fluid">
+        <div class="navbar">
+            <div class="navbar-inner">
+            <a class="brand" href="/">JimmyFayard.com</a>
+                <ul class="nav">
+                    <li><a href="#">About</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </div>
+            </div>
+            
+        <div id="content">
+            <div class="row-fluid">
+            <div class="span12">
+            {% block body %}{% endblock %}
+        </div>
+        </div>
+        <div class="footer">
+            <div class="container">
+            <div class="row-fluid">
+            <div class="span4">
+                <div id="copyright" >&copy; {{ "now"|date("Y") }} Jimmy Fayard</div>
+            </div>
+            <div class="span4">
+            <p>
+                <img src="http://jofayard.koding.kd.io/web/images/linkedin.png" class="img-rounded">
+                <img src="/web/images/twitter.png" class="img-rounded">
+                <img src="/web/images/rss.png" class="img-rounded">
+            </p>
+            </div>
+            <div class="span4">
+           <p>other stuff goes here</p></div>
+             </div>
+             </div>
+        </p>
+        </div>
+        </div>
+    </body>
+</html>

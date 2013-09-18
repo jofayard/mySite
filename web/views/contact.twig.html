@@ -1,0 +1,27 @@
+{% extends 'base.twig.html' %}
+
+{% block body %}
+<form action="" class="vertical_form third" method="post">
+ <fieldset class="bg_lightgrey">
+      <legend>Contact Me:</legend>
+   {{ form_start(form) }}
+   <div class="error">
+   {{ form_errors(form.name) }}
+   {{ form_errors(form.email) }}
+   {{ form_errors(form.message) }}
+   </div>
+    {{ form_row(form.name) }}
+    {{ form_row(form.email) }}
+   {{ form_end(form) }}
+   
+    <fieldset class="fieldsetbuttons">
+
+    <div><input type="submit" class="btn btn-primary" name="submit" /></div>
+
+</fieldset>    
+   </fieldset>
+</form>
+<div id="instructions" class="third obj_right round_20 text_center vpad_20 top_margin_20 bottom_margin_20 bg_lightgrey">
+    <h6>If you would like to get a quote for a site, ask a question, or just make a comment please use this form.</h6>
+</div>
+{% endblock %}
